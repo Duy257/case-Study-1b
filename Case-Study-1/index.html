@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/Case-Study-1/css/main.css">
+    <link rel="stylesheet" href="/Case-Study-1/css/Cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal" >
+        <div class="main-modal">
+            <div class="modal-container">
+                <div>
+                    <h2>Giỏ hàng của bạn</h2>
+                </div>
+                    <button id="close" onclick="closeModal()"> <i class="fa-solid fa-xmark"></i></button>
+                <div id="arrCart">
+                    
+                </div >
+                <div class="showPrice">
+                    <p>Tổng tiền:</p>
+                    <p id="totalprice"></p>
+                </div>
+                <div class="pay">
+                    <div class="button-pay">
+                        <Button onclick="closeModal()">Đóng</Button>
+                        <button class="button-pay1" onclick="pay()">Thanh toán</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <img src="/Case-Study-1/img/logo-hacomtrangch.png" alt="ảnh lỗi">
+        <div class="search">
+            <input type="text" placeholder="Bạn muốn tìm gì?" id="search">
+            <button onclick="search()">Tìm Kiếm</button>
+        </div>
+        <div class="contact">
+            <i class="fa-solid fa-phone"></i>
+            <h4>Hotline</h4>
+            <p>1900 9999 (8:30 - 21:00)</p>
+        </div>
+        <div class="cart">
+            <button onclick="showModal()" class="cart">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+        </div>
+    </header>
+    <div id="content" style="background-color: #F4F4F4; margin-top: 70px">
+        <div id="search-container">
+            <div>
+                <h2>Tìm kiếm</h2>
+                <div id="arr-search">
+                    
+                </div>
+
+            </div>
+        </div>
+        <div style="width: 1190px; height: 480px; background-color: white; margin: 70px auto">
+            <div style="padding: 20px;">
+                <h2>Laptop</h2>
+                <div id="list-laptop" class="list-product">
+
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- pc -->
+
+        <div style="width: 1190px; height: 480px; background-color: white; margin: 70px auto">
+            <div style="padding: 10px;">
+                <h2>PC GAMING, STREAMING </h2>
+                <div id="list-PC" class="list-product">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="/Case-Study-1/js/Product.js"></script>
+    <script src="/Case-Study-1/js/showProduct.js"></script>
+    <script src="/Case-Study-1/js/Cart.js"></script>
+    <script src="/Case-Study-1/js/search.js"></script>
+</body>
+</html>
+
+

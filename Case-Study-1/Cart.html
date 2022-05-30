@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="Cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Shopping-cart</title>
+  
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div id="header">
+            <img src="/img/logo-hacomtrangch.png" alt="ảnh lỗi">
+            <div class="search">
+                <input type="text" placeholder="Bạn muốn tìm gì?">
+                <button>Tìm Kiếm</button>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-phone"></i>
+                <h4>Hotline</h4>
+                <p>1900 9999 (8:30 - 21:00)</p>
+            </div>
+            <div class="cart">
+                <button>
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                </button>
+            </div>
+
+        </div>
+            <!-- The Modal -->
+            <div id="cart-content">
+
+                <button id="cart">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    Giỏ Hàng
+                </button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <!-- phần chứa sản phẩm -->
+                            <div id="cart-product">
+                                <div class="product">
+                                    <img src="/img/img-lap/lap1.png" alt="">
+                                    <h3>${arrLap[i].name}</h3>
+                                    <p>1${arrLap[i].price}</p>
+                                </div>
+                            </div>
+                            
+                            <div class="cart-total">
+                                <strong class="total-money">Tổng Cộng:</strong>
+                                <span class="show-total">0VNĐ</span>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            </div>
+
+    </header>
